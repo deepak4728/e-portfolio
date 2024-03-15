@@ -1,2 +1,2 @@
-# e-portfolio
-This repository describes my development journey.
+# Portfolio
+This repository shows my development journey.

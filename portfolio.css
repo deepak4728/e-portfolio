@@ -190,7 +190,8 @@ body{
 
     background-image: url(static/dee.png);
     background-repeat: no-repeat;
-    background-position:95%;
+    background-position: right;
+    background-size: 30%;
 
     & span{
         color: #5f7aa0;

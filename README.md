@@ -20,7 +20,7 @@ Welcome to my portfolio website! This project showcases my skills, projects, and
 
 ## Getting Started
 1. Clone this repository: `git clone https://github.com/deepak4728/e-portfolio`
-2. Customize the content in `index.html`, `style.css`, and `script.js`.
+2. Customize the content in `index.html`, `portfolio.css`, and `app.js`.
 3. Replace the screenshot image with your own.
 4. Deploy your site using GitHub Pages.
 

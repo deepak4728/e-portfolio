@@ -9,33 +9,35 @@
 </head>
 <body>
     <div class="page">
-       <nav class="nav cardEffect">
-            <aside class="middle">
-                <a><img class="icons" src="static/icons/home.png" alt="Home"  title="Home"></a>
-                <!-- <a><img class="icons" src="static/icons/projects.png" alt="Projects" title="Projects"></a> -->
-                <a><img class="icons" src="static/icons/certificate.png" alt="Projects and Certificates" title="Certificates"></a>
-                <a><img class="icons" src="static/icons/achievement.png" alt="Achievements" title="Achievements"></a>
-                <a><img class="icons" src="static/icons/education.png" alt="Education" title="Education"></a>
-                <a><img class="icons" src="static/icons/contact_us.png" alt="Contact" title="Contact"></a>
-                <a><img class="icons" src="static/icons/about_us.png" alt="About" title="About"></a>
-                
-            </aside>
-            <!-- <footer class="footer">
-                <div class="footerBottom">
-                    
-                </div>
-            </footer> -->
-       </nav>
-       <main class="main">
-        <div class="down">
+       <header class="flex" id="header">
+            <aside id="middle">
+                <a href="#"><img class="icons" src="static/icons/home.png" alt="Home"  title="Home"></a>
+                <a href="#workExperience"><img class="icons" src="static/icons/workexperience.png" alt="Work Experience" title="Work Experience"></a>
+                <a href="#projects"><img class="icons" src="static/icons/project.png" alt="Projects" title="Projects"></a>
+                <a href="#certificates"><img class="icons" src="static/icons/certificate.png" alt="Certificates" title="Certificates"></a>
+                <a href="#skills"><img class="icons" src="static/icons/skills.png" alt="Skills"  title="Skills"></a>
+                <a href="#education"><img class="icons" src="static/icons/education.png" alt="Education" title="Education"></a>
+                <a href="#achievements"><img class="icons" src="static/icons/achievement.png" alt="Achievements" title="Achievements"></a>
+                <a href="#contact"><img class="icons" src="static/icons/contact_us.png" alt="Contact" title="Contact"></a>
 
-            <!-- <header class="header">Hey There, This side Deepak </header> -->
-            <section class="sectionIntro cardEffect">
-                <h3>Deepak <span>Yadav</span></h3>
-                <p id="summary"></p>
-                <div>
-                    <div class="socialLink">
-                        
+            </aside>
+        </header>
+
+        <main class="main">
+            
+            <section class="flex" id="profile">
+                <div class="flex" id="profileIntro">
+                    <h1 id="greet">Hi there! I am Deepak </h1>
+                    <h1 id="tag">As
+                        <ul>
+                            <li>AI Enthusiast</li>
+                            <li>Data Analyst</li>
+                            <li>Web Developer</li>
+                            <li>Graphic Designer</li>
+                        </ul>
+                    </h1>
+                    <p id="summary"></p>
+                    <div class="flex" id="socialLink">
                         <a rel="noopener" href="https://www.linkedin.com/in/deepak4728" target="_blank"><img class="icons" src="static/icons/linkedin.png" alt="LinkedIn" title="LinkedIn"></a>
                         <a rel="noopener" href="https://github.com/deepak4728" target="_blank"><img class="icons" src="static/icons/github.png" alt="GitHub" title="GitHub"></a>
                         <a rel="noopener" href="https://www.instagram.com/dee_yad_0355/" target="_blank"><img class="icons" src="static/icons/instagram.png" alt="Instagram" title="Instagram"></a>
@@ -44,30 +46,31 @@
                         <!-- <a href="" target="_blank"><img class="icons" src="static/icons/" alt="" title=""></a> -->
                     </div>
                     <a rel="noopener" href="https://docs.google.com/document/d/e/2PACX-1vSLEb66zlz-MVYIDZOn3kSf1DneWTBBAHlJWvsfuu8KDTulaNCxtc5oNGTQiJxOtFvHeLzpVYJFGmXY/pub" target="_blank">
-                        <button type="submit">Resume</button>
+                        <button type="submit" id="resume">Resume</button>
                     </a>
-                    
-                    
+                </div>
+                <div class="flex" id="profilePhoto">
+                    <img src="static/dee.png" alt="">
                 </div>
             </section>
-            <section class="section sectionSkills cardEffect">
-                <b>SKILLS:</b>
-                <ul id="skillsList"></ul>
+            <section class="" id="workExperience"></section>
+            <section class="" id="projects"></section>
+            <section class="" id="certificates">
+                <h2>Certificates</h2>
+                <div class="flex" id="certStack"></div>
             </section>
-            <section class="section sectionEducation cardEffect">
-                <b>EDUCATION:</b>
-                <ul id="educationList"></ul>
+            <section class="" id="skills">
+                <h2>Tech Stack</h2>
+                <div class="flex" id="techStack"></div>
             </section>
-            <section class="section sectionCertificates cardEffect">
-                <b>CERTIFICATIONS:</b>
-                <ul id="certificateList"></ul>
+            <section class="" id="education">
+                <!-- <img src="static/icons/education/mbm.gif" alt="">
+                <img src="static/icons/education/jnv.png" alt=""> -->
             </section>
-        </div>
-        <h5 class="description">This template is made in <span>&hearts;</span> by Deepak Yadav </h5>
+            <section class="" id="achievements"></section>
+            <section class="" id="contact"></section>
+            <h5 class="description">This template is made by Deepak</h5>
        </main>
-
-    </div>
-    
     <script src="app.js"></script>
 </body>
 </html>

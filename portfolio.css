@@ -19,6 +19,9 @@
 body{
     margin: 0px;
 }
+section{
+    padding: 10px;
+}
 /* classses for applying flex property */
 .flex{
     display: flex;
@@ -39,7 +42,8 @@ body{
         border-radius: 0px 0px 3px 3px;
         box-shadow: 0px 0px 10px #a1c0dc;
         padding-top: 10px;
-        background-image: linear-gradient(to right, pink, skyblue, rgb(219, 219, 113));
+        background-color: rgba(161, 214, 235, 0.9);
+        /* background-image: linear-gradient(to right, pink, skyblue, rgb(219, 219, 113)); */
     }
     #middle{
         display: flex; flex-direction: row;
@@ -59,21 +63,24 @@ body{
         grid-template-columns: repeat(12,1fr);
     }
     #header{
-        flex-direction: column;
+        position: fixed;
         left: 0px;
-        width: 100%;
-        height:100vh;
-        margin: 5px;
+        
+        flex-direction: column;
         z-index: 2;
+        margin: 5px;
+
+        min-height: 515px;
+        height:100vh;
     }
     #middle{
-        position: sticky;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+        /* padding-left: 7px; */
         & a{
-        margin: 10px;
-    }
+            margin: 10px;
+        }
     }
     
 }
@@ -126,7 +133,7 @@ img.icons{
     }
 }
 .description{
-    margin: 7px auto 2px;
+    margin: 7px auto 20px;
     font-size: 20px;
 }
 
@@ -180,8 +187,8 @@ img.icons{
             margin: 10px;
         }
         #resume{
-            margin: 15px;
             padding: 7px 12px;
+            cursor: pointer;
         }
     }
     #profilePhoto{
@@ -203,42 +210,57 @@ img.icons{
     from{
         left:0px;
     }to{
-        left: 100%;
-    }
-}
-@keyframes slide-left {
-    0%{
-        width: 200px;
-    }
-    100%{
-        width: 0px;
+        left: 110%;
     }
 }
 /* Certificates section CSS here */
 #certificates{
+    overflow: hidden;
+}
+#certStack{
+    height: 235px;
+    justify-content: start;
+    flex-wrap: nowrap;
     
-
+    position: relative;
+    animation: scrollHorizantal 30s infinite 3s;
+}
+@keyframes scrollHorizantal {
+    from{
+        left: 0px;
+    }
+    50%{
+        left: -850px;
+    }
+    to{
+        left: 0px;
+    }
 }
 .certStackImg{
-        border-radius: 5px;
-        margin: 3px;
-        width: 100%;
-        height: auto;
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
 }
 .card{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 0 1 210px;
-    padding: 8px;
+    flex: 0 0 150px;
+    height: 210px;
     margin: 13px;
     border-radius: 10px;
     box-shadow: 0px 0px 3px #ddd;
     border: 1px solid #ddd;
     &:hover{
-        transform: scale(1.1);
+        transform: scale(1.08);
         box-shadow: 0px 0px 5px #ccc;
         transition: 0.5s;
+    }
+    a{
+        padding: 5px;
+        p{
+            margin: 10px;
+        }
     }
 }
 
@@ -257,3 +279,19 @@ img.icons{
     }
 }
 
+#contact{
+    flex-direction: column;
+    #contactStack{
+        flex-direction: column;
+    }
+    input,button{
+        margin: 10px;
+        padding: 8px;
+    }
+    input[id="name"],input[id="email"]{
+        flex: 1 1 100px;
+    }
+    input[id="message"]{
+        flex: 1 1 200px;
+    }
+}

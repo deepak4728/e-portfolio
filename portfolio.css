@@ -231,6 +231,19 @@ img.icons{
     width: 0px;
 }
 
+/* Projects here */
+#projectStack{
+    .card{
+        flex: 0 0 250px;
+        height: 300px;
+    }&.wrapper{
+        height: 340px;
+    }
+    a{
+        text-decoration: none;
+    }
+}
+
 /* Certificates section CSS here */
 #certificates{
     /* overflow: hidden; */
